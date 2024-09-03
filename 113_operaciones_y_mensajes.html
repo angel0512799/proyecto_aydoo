@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.1.3 Operaciones y mensajes | Análisis y Diseño Orientado a Objetos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Angel Isaid Martinez Bautista" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-38"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Análisis y Diseño Orientado a Objetos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Análisis y Diseño Orientado a Objetos</a></li>
+   <li><a href="introduccin_a_la_asignatura.html" class="no-ch">Introducción a la asignatura</a></li>
+   <li class="current-page-parent"><a href="unidad_i_introduccin_a_la_orientacin_a_objetos.html" class="current-page-parent daddy">Unidad I: Introducción a la Orientación a Objetos</a>
+   <ul>
+      <li class="current-page-parent"><a href="11_conceptos_de_orientacin_a_objetos.html" class="current-page-parent daddy">1.1 Conceptos de Orientación a Objetos</a>
+      <ul>
+         <li><a href="111_clases_y_objetos.html" class="no-ch">1.1.1 Clases y objetos</a></li>
+         <li><a href="112_atributos.html" class="no-ch">1.1.2 Atributos</a></li>
+         <li id="active"><a href="113_operaciones_y_mensajes.html" class="active no-ch">1.1.3 Operaciones y mensajes</a></li>
+         <li><a href="114_mensajes_y_encapsulamiento.html" class="no-ch">1.1.4 Mensajes y encapsulamiento</a></li>
+         <li><a href="115_herencia_y_polimorfismo.html" class="no-ch">1.1.5 Herencia y polimorfismo</a></li>
+         <li><a href="actividad_interactiva.html" class="no-ch">Actividad interactiva</a></li>
+      </ul>
+      </li>
+      <li><a href="12_identificacin_de_los_elementos_de_un_modelo_de_objetos.html" class="daddy">1.2 Identificación de los elementos de un modelo de objetos</a>
+      <ul class="other-section">
+         <li><a href="121_identificacin_de_clases_y_objetos.html" class="no-ch">1.2.1 Identificación de clases y objetos</a></li>
+         <li><a href="122_especificaciones_de_atributos.html" class="no-ch">1.2.2 Especificaciones de atributos</a></li>
+         <li><a href="123_definicin_de_la_operaciones.html" class="no-ch">1.2.3 Definición de la operaciones</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="unidad_ii_lenguaje_unificado_para_modelar.html" class="daddy">Unidad II: Lenguaje Unificado para Modelar</a>
+   <ul class="other-section">
+      <li><a href="21_introduccin.html" class="daddy">2.1 Introducción</a>
+      <ul class="other-section">
+         <li><a href="unidad.html" class="no-ch">Unidad</a></li>
+         <li><a href="unidad0.html" class="no-ch">Unidad</a></li>
+         <li><a href="unidad1.html" class="no-ch">Unidad</a></li>
+      </ul>
+      </li>
+      <li><a href="22_presentacin_de_uml.html" class="no-ch">2.2 Presentación de UML</a></li>
+      <li><a href="23_modelado_del_comportamiento.html" class="no-ch">2.3 Modelado del Comportamiento</a></li>
+      <li><a href="24_modelado_estructural.html" class="no-ch">2.4 Modelado Estructural</a></li>
+      <li><a href="25_modelado_arquitectnico.html" class="no-ch">2.5 Modelado Arquitectónico</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_iii_rational_unified_process.html" class="no-ch">Unidad III: Rational Unified Process</a></li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="112_atributos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="114_mensajes_y_encapsulamiento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.1.3 Operaciones y mensajes</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_lee" id="id53">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Operaciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta53_130_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Las operaciones son <span style="color: #0000ff;"><strong>acciones o comportamientos que un objeto puede realizar</strong></span>. En el contexto de la programación orientada a objetos se conocen como <em><strong><span style="color: #0000ff;">“métodos o funciones”</span></strong></em>.<br style="clear: both;" /><br style="clear: both;" /></span></p>
+<p><span style="font-size: 14pt; color: #000000;"><img src="ejemplo_operacion.gif" width="701" height="205" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<div class="exe-fx exe-carousel">
+<h2>Representan acciones de un objeto</h2>
+<p style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Las operaciones representan las <span style="color: #ff6600;"><strong>acciones que un objeto puede realizar</strong></span> en base a los mensajes que recibe de otros objetos o del entorno.</span><span style="font-size: 14pt; color: #000000;"></span></p>
+<p style="text-align: center;"><span style="font-size: 14pt; color: #000000;"><img src="ejemplo_operacion1.png" width="250" height="232" /></span></p>
+<h2>Incluyen diferentes actividades</h2>
+<p style="text-align: justify;"><span style="color: #000000; font-size: 14pt;">En dichas acciones se pueden incluir <strong><span style="color: #ff6600;">cálculos, modificaciones de estado del objeto, interacciones con otros objetos, y diferentes tipos de actividades que el objeto pueda realizar.</span></strong></span></p>
+<p style="text-align: center;"><span style="color: #000000; font-size: 14pt;"><img src="ejemplo_operacion2.png" width="250" height="232" /></span></p>
+<h2 style="text-align: justify;">Importancia</h2>
+<ul>
+<li style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Las operaciones son fundamentales porque <strong><span style="color: #ff6600;">encapsulan el comportamiento de los objetos</span></strong> y definen cómo interactúan dentro de un sistema.<br style="clear: both;" /><img src="ejemplo_oprecaion3.png" width="250" height="261" style="display: block; margin-left: auto; margin-right: auto;" /><br style="clear: both;" /></span></li>
+<li style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Identificar y definir las operaciones adecuadas para cada objeto es esencial para diseñar un sistema coherente y eficiente.</span></li>
+</ul>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_ejemplo" id="id76">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_ejemplo.svg)"><h1 class="iDeviceTitle">Ejemplo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta76_130_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Un <strong>cajero automático</strong> puede realizar las siguientes operaciones:</span></p>
+<ul>
+<li style="text-align: justify;"><span style="color: #ff0000;"><strong><span style="font-size: 14pt;">depositar()</span></strong></span></li>
+<li style="text-align: justify;"><span style="color: #ff0000;"><strong><span style="font-size: 14pt;">retirar()</span></strong></span></li>
+<li style="text-align: justify;"><span style="color: #ff0000;"><strong><span style="font-size: 14pt;">consultarSaldo()</span></strong></span></li>
+<li style="text-align: justify;"><strong><span style="font-size: 14pt; color: #000000;"><span style="color: #ff0000;">transferirDinero()</span><br style="clear: both;" /></span></strong></li>
+</ul>
+<p><a href="ejemplo_caj_operacion.png" rel="lightbox"><strong><span style="font-size: 14pt; color: #000000;"><img src="ejemplo_caj_operacion.png" width="500" height="333" style="display: block; margin-left: auto; margin-right: auto;" /></span></strong></a></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_lee" id="id54">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Mensajes</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta54_131_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><span style="color: #000000; font-size: 14pt;">Los mensajes son el medio por el cual los </span><span style="font-size: 14pt; color: #0000ff;"><strong>objetos se pueden comunicar entre si</strong></span><span style="color: #000000; font-size: 14pt;">. </span></p>
+<ul>
+<li style="text-align: justify;"><span style="color: #000000; font-size: 14pt;">Veamos a un mensaje como una <span style="color: #18c200;"><span style="color: #000000;">solicitud enviada desde un<em></em></span><strong><em><span style="color: #0000ff;"> objeto (remitente) a otro objeto (receptor)</span><span style="color: #000000;">.</span></em></strong></span></span><span style="color: #000000; font-size: 14pt;"><br style="clear: both;" /><br style="clear: both;" /></span><span style="color: #000000; font-size: 14pt;"></span><span style="color: #000000; font-size: 14pt;"><img src="ejemplo_mensaje.gif" width="250" height="232" style="display: block; margin-left: auto; margin-right: auto;" /></span></li>
+</ul>
+<p style="text-align: justify;"><span style="color: #003300;"><strong><em><span style="font-size: 14pt;"><br style="clear: both;" /></span></em></strong></span><span style="color: #000000;"><em><span style="font-size: 14pt;">Ahora bien, las clases deben de trabajar juntas para lograr los objetivos del diseño:</span></em></span></p>
+<ul style="list-style-type: square;">
+<li><span style="color: #000000;"><em><span style="font-size: 14pt;">Para esto los mensajes hacen que el objeto que lo recibe <strong><span style="color: #0000ff;">realice una acción específica</span></strong>. </span></em></span></li>
+<li><span style="color: #000000;"><em><span style="font-size: 14pt;">Esta acción ocurre cuando <strong><span style="color: #0000ff;">una operación es ejecutada</span></strong>.</span></em></span></li>
+</ul></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Ver interacción entre objetos" /></div><div class="feedback js-feedback js-hidden"><p style="text-align: justify;"><span style="font-size: 14pt; color: #000000;"><strong>La interacción entre los objetos se puede observar en el siguiente esquema:</strong><br style="clear: both;" /></span></p>
+<p><a href="interaccion_objetos.gif" rel="lightbox"><span style="font-size: 14pt; color: #000000;"><img src="interaccion_objetos.gif" width="599" height="378" style="display: block; margin-left: auto; margin-right: auto;" /></span></a></p>
+<table border="0" style="width: 100%; border-style: none; background-color: #ffffff;">
+<tbody>
+<tr>
+<td style="width: 14.924%; text-align: right;"><img src="obj_emisor.png" width="100" height="104" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 85.076%; text-align: left;">
+<p><span style="color: #000000; font-size: 14pt;">1. Una operación en el <span style="color: #ff0000;"><strong><span style="font-family: 'andale mono', monospace;">ObjetoEmisor</span></strong></span> crea un mensaje con el siguiente formato <span style="color: #ff0000;"><strong><span style="font-family: 'andale mono', monospace;">mensaje(&lt;parámetros&gt;)</span></strong></span>.</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 14.924%; text-align: right;"><img src="obj_mensaje.gif" width="124" height="59" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 85.076%; text-align: left;"><span style="color: #000000; font-size: 14pt;">2. Los parámetros indican que el <span style="font-family: 'andale mono', monospace; color: #ff0000;"><strong>ObjetoReceptor</strong></span> es el objeto que debe ser activado por el mensaje.</span></td>
+</tr>
+<tr>
+<td style="width: 14.924%; text-align: right;"><img src="obj_receptor.png" width="100" height="99" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 85.076%; text-align: left;"><span style="color: #000000; font-size: 14pt;">3. La operación en <span style="font-family: 'andale mono', monospace; color: #ff0000;"><strong>ObjetoReceptor</strong></span> implica recibir el mensaje y los datos necesarios para que la acción se realice correctamente.</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_ejemplo" id="id77">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_ejemplo.svg)"><h1 class="iDeviceTitle">Ejemplo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta77_131_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><span style="font-size: 14pt; color: #000000;"><strong>Un ejemplo común de ver es el de una televisión y su control remoto:</strong></span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Cuando desea ver algún programa de televisión, busca el control remoto y presiona el botón de encendido para ver su programa favorito.</span></li>
+</ul>
+<p style="text-align: justify;"><span style="color: #000000;"><strong><span style="font-size: 14pt;">Por lo cual, ocurre el siguiente proceso:</span></strong></span></p>
+<ol style="text-align: justify;">
+<li><span style="color: #ff6600;"><strong><span style="font-size: 14pt;">El control remoto le envía un mensaje a la televisión para que se encienda.</span></strong></span></li>
+<li><span style="color: #ff6600;"><strong><span style="font-size: 14pt;">La televisión recibe el mensaje, lo identifica como una petición para que se encienda y lo hace.</span></strong></span></li>
+</ol>
+<p><a href="ejemplo_obj_mensaje.gif" rel="lightbox"><strong><span style="font-size: 14pt; color: #000080;"><img src="ejemplo_obj_mensaje.gif" width="501" height="216" style="display: block; margin-left: auto; margin-right: auto;" /></span></strong></a></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">De igual manera, el control remoto puede enviar otros mensaje con peticiones como <strong>cambiar de canal, ajustar el volumen, activar los subtítulos</strong>.</span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="112_atributos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="114_mensajes_y_encapsulamiento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

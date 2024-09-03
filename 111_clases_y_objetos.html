@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.1.1 Clases y objetos | Análisis y Diseño Orientado a Objetos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Angel Isaid Martinez Bautista" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-35"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Análisis y Diseño Orientado a Objetos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Análisis y Diseño Orientado a Objetos</a></li>
+   <li><a href="introduccin_a_la_asignatura.html" class="no-ch">Introducción a la asignatura</a></li>
+   <li class="current-page-parent"><a href="unidad_i_introduccin_a_la_orientacin_a_objetos.html" class="current-page-parent daddy">Unidad I: Introducción a la Orientación a Objetos</a>
+   <ul>
+      <li class="current-page-parent"><a href="11_conceptos_de_orientacin_a_objetos.html" class="current-page-parent daddy">1.1 Conceptos de Orientación a Objetos</a>
+      <ul>
+         <li id="active"><a href="111_clases_y_objetos.html" class="active no-ch">1.1.1 Clases y objetos</a></li>
+         <li><a href="112_atributos.html" class="no-ch">1.1.2 Atributos</a></li>
+         <li><a href="113_operaciones_y_mensajes.html" class="no-ch">1.1.3 Operaciones y mensajes</a></li>
+         <li><a href="114_mensajes_y_encapsulamiento.html" class="no-ch">1.1.4 Mensajes y encapsulamiento</a></li>
+         <li><a href="115_herencia_y_polimorfismo.html" class="no-ch">1.1.5 Herencia y polimorfismo</a></li>
+         <li><a href="actividad_interactiva.html" class="no-ch">Actividad interactiva</a></li>
+      </ul>
+      </li>
+      <li><a href="12_identificacin_de_los_elementos_de_un_modelo_de_objetos.html" class="daddy">1.2 Identificación de los elementos de un modelo de objetos</a>
+      <ul class="other-section">
+         <li><a href="121_identificacin_de_clases_y_objetos.html" class="no-ch">1.2.1 Identificación de clases y objetos</a></li>
+         <li><a href="122_especificaciones_de_atributos.html" class="no-ch">1.2.2 Especificaciones de atributos</a></li>
+         <li><a href="123_definicin_de_la_operaciones.html" class="no-ch">1.2.3 Definición de la operaciones</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="unidad_ii_lenguaje_unificado_para_modelar.html" class="daddy">Unidad II: Lenguaje Unificado para Modelar</a>
+   <ul class="other-section">
+      <li><a href="21_introduccin.html" class="daddy">2.1 Introducción</a>
+      <ul class="other-section">
+         <li><a href="unidad.html" class="no-ch">Unidad</a></li>
+         <li><a href="unidad0.html" class="no-ch">Unidad</a></li>
+         <li><a href="unidad1.html" class="no-ch">Unidad</a></li>
+      </ul>
+      </li>
+      <li><a href="22_presentacin_de_uml.html" class="no-ch">2.2 Presentación de UML</a></li>
+      <li><a href="23_modelado_del_comportamiento.html" class="no-ch">2.3 Modelado del Comportamiento</a></li>
+      <li><a href="24_modelado_estructural.html" class="no-ch">2.4 Modelado Estructural</a></li>
+      <li><a href="25_modelado_arquitectnico.html" class="no-ch">2.5 Modelado Arquitectónico</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_iii_rational_unified_process.html" class="no-ch">Unidad III: Rational Unified Process</a></li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="11_conceptos_de_orientacin_a_objetos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="112_atributos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.1.1 Clases y objetos</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_lee" id="id39">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Clases</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta39_120_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Una <span style="color: #0000ff;"><strong>clase</strong></span> representa un <span style="color: #0000ff;"><strong>concepto o abstracción</strong></span> relevante dentro del dominio del problema que se esta analizando o diseñando.<br style="clear: both;" /><br style="clear: both;" /></span></li>
+<li style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Una clase encapsula los <span style="color: #0000ff;"><strong>atributos y comportamientos (operaciones)</strong></span> que se relacionan entre sí.<br style="clear: both;" /><br style="clear: both;" /></span></li>
+<li style="text-align: justify;"><span style="color: #000000;"><span style="font-size: 14pt;">Describen tanto las <span style="color: #0000ff;"><strong>características</strong></span> como los <span style="color: #0000ff;"><strong>comportamientos</strong></span> de un conjunto de objetos del mundo real que comparten las mismas <span style="color: #0000ff;"><strong>propiedades y acciones</strong>.</span><br style="clear: both;" /></span><span style="font-size: 14pt;"></span></span></li>
+</ul>
+<p><span style="color: #000000;"><span style="font-size: 14pt;">De manera gráfica, una clase se representa de la siguiente manera.</span></span></p>
+<p><span style="color: #000000;"><span style="font-size: 14pt;"><a href="estructura_clase.gif" rel="lightbox"><img src="estructura_clase.gif" width="719" height="333" style="display: block; margin-left: auto; margin-right: auto;" /></a><br /></span></span></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Ejemplo" /></div><div class="feedback js-feedback js-hidden"><p style="text-align: center;"><strong><span style="font-size: 14pt; color: #000000;">Observa el siguiente ejemplo de la clase Coche, donde se muestran sus diferentes atributos y comportamientos.</span></strong><span style="font-size: 14pt; color: #000000;"></span></p>
+<p><a href="ejemplo_clase.png" rel="lightbox"><span style="font-size: 14pt; color: #000000;"><img src="ejemplo_clase.1.png" width="720" height="480" style="display: block; margin-left: auto; margin-right: auto;" /></span></a></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_lee" id="id40">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lee.svg)"><h1 class="iDeviceTitle">Objetos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta40_121_2" class="block iDevice_content">
+<div class="exe-text"><p><a href="Mapa_objeto.png" rel="lightbox"><img src="Mapa_objeto.png" width="720" height="530" style="vertical-align: middle; display: block; margin-left: auto; margin-right: auto;" /></a></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Ejemplo" /></div><div class="feedback js-feedback js-hidden"><p><a href="ejemplo_objeto.gif" rel="lightbox"><img src="ejemplo_objeto.1.gif" alt="" width="720" height="480" hspace="auto" style="display: block; margin-left: auto; margin-right: auto;" /></a></p>
+<p style="text-align: center;"><strong><span style="color: #000000; font-size: 14pt;">A partir de la clase Coche (ejemplo anterior), se puede crear un nuevo objeto "ObjetoCoche1", el cual tendrá valores definidos para sus atributos y las operaciones que será capaz de realizar.</span></strong><span style="color: #000000; font-size: 14pt;"></span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_conocer" id="id73">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_conocer.svg)"><h1 class="iDeviceTitle">Características de un Objeto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta73_127_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><strong><span style="font-size: 14pt; color: #000000;">Un objeto cuenta con las siguientes características:</span></strong></p>
+<div class="exe-fx exe-accordion">
+<h2 style="text-align: justify;">Estado</h2>
+<ul>
+<li style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">El estado de un objeto es cómo <strong>se encuentra en un momento específico</strong>, y este estado <strong>suele cambiar con el tiempo</strong>.<br style="clear: both;" /><br style="clear: both;" /></span></li>
+<li style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Está formado por un <strong>grupo de atributos</strong> junto con los valores de estos mismos. <br style="clear: both;" /></span></li>
+</ul>
+<hr />
+<p style="text-align: justify;"><span style="color: #000000;"><span style="font-size: 18.6667px;"><b><span style="color: #000080;">Ejemplo: Una lampará</span></b></span></span></p>
+<p style="text-align: justify;"><span style="color: #000000;"><span style="font-size: 18.6667px;">El estado de una lámpara se puede describir por atributos como: </span></span></p>
+<ul style="text-align: justify;">
+<li style="text-align: justify;"><strong><span style="color: #000000;"><span style="font-size: 18.6667px;">estaEncendida = "si"</span></span></strong></li>
+<li style="text-align: justify;"><strong><span style="color: #000000; font-size: 14pt;">intensidad = "50%"</span></strong></li>
+</ul>
+<p><span style="color: #000000;"><span style="font-size: 18.6667px;"><img src="ejemplo_estado.gif" width="399" height="266" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p style="text-align: justify;"><span style="color: #000000;"><span style="font-size: 18.6667px;">En algún momento, el estado de la lampará esta determinado si esta encendida o apagada y por la intensidad de la luz. Por otro lado, si se apaga o se ajusta la intensidad, cambiará su estado.</span></span></p>
+<h2 style="text-align: justify;">Comportamiento</h2>
+<ul>
+<li style="text-align: justify;"><span style="color: #000000; font-size: 14pt;">Los comportamientos determinan como los <strong>objetos actúan y reaccionan ante las solicitudes de otros objetos</strong>.<br style="clear: both;" /><br style="clear: both;" /></span></li>
+<li><span style="color: #000000; font-size: 14pt;"><span style="color: #000000; font-size: 14pt;">El comportamiento es representado por las <strong>funciones o procedimientos</strong> que el objeto puede hacer.</span></span><span style="color: #000000; font-size: 14pt;"><span style="color: #000000; font-size: 14pt;"></span></span></li>
+</ul>
+<hr />
+<p><strong><span style="color: #000080; font-size: 14pt;"><span style="font-size: 14pt;">Ejemplo: Un perro</span></span></strong></p>
+<p><span style="color: #000000; font-size: 14pt;"><span style="color: #000000; font-size: 14pt;">El comportamiento de un perro se describe por los métodos o acciones que puede realizar:</span></span></p>
+<ul>
+<li><strong><span style="color: #000000; font-size: 14pt;"><span style="color: #000000; font-size: 14pt;">ladrar()</span></span></strong></li>
+<li><strong><span style="color: #000000; font-size: 14pt;"><span style="color: #000000; font-size: 14pt;">comer()</span></span></strong></li>
+<li><strong><span style="color: #000000; font-size: 14pt;"><span style="color: #000000; font-size: 14pt;">correr()</span></span></strong></li>
+<li><strong><span style="color: #000000; font-size: 14pt;"><span style="color: #000000; font-size: 14pt;">dormir()</span></span></strong><span style="color: #000000; font-size: 14pt;"><span style="color: #000000; font-size: 14pt;"></span></span></li>
+</ul>
+<div class="exe-layout-2-cols exe-layout-2-50-50 exe-clear">
+<div class="exe-col exe-col-1">
+<figure class="exe-figure exe-image license-custom position-right" style="width: 400px;"><img src="ejemplo_compor_1.gif" width="401" height="267" /></figure>
+</div>
+<div class="exe-col exe-col-2">
+<figure class="exe-figure exe-image license-custom" style="width: 400px;"><img src="ejemplo_compor_2.gif" width="401" height="267" /></figure>
+</div>
+</div>
+<p><span style="color: #000000; font-size: 14pt;"><span style="color: #000000; font-size: 14pt;">El comportamiento del perro esta definido por lo que puede hacer, ya sea que este ladrando o corriendo.</span></span></p>
+<h2 style="text-align: justify;">Identidad</h2>
+<ul>
+<li style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Cada objeto tiene una <strong>identidad única <span style="background-color: #ffffff;">que</span> lo diferencia de otros objetos</strong>, incluso si tienen el mismo <strong>estado y comportamiento</strong>.<br style="clear: both;" /><br style="clear: both;" /></span></li>
+<li style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">La identidad permite que podamos <strong>distinguir un objeto de otro</strong>, incluso si son muy similares en apariencia.</span></li>
+</ul>
+<hr />
+<p style="text-align: justify;"><span style="font-size: 14pt; color: #000080;"><strong>Ejemplo: Una cuenta bancaria</strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">La identidad es lo que hace que un objeto sea único, en este caso es:</span></p>
+<ul>
+<li style="text-align: justify;"><strong><span style="font-size: 14pt; color: #000000;">númeroCuenta = "12345678"</span></strong></li>
+<li style="text-align: justify;"><strong><span style="font-size: 14pt; color: #000000;">titular = "Juan Pérez"</span></strong></li>
+<li style="text-align: justify;"><strong><span style="font-size: 14pt; color: #000000;">saldo = "$1,000"</span></strong></li>
+</ul>
+<p><span style="font-size: 14pt; color: #000000;"><img src="ejemplo_identidad.gif" width="599" height="234" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Suponiendo que dos cuentas bancarias tengan el mismo titular y el mismo saldo, ambas pueden ser idénticas, pero lo que permite distinguir una cuenta de la otra es el <strong>Número de cuenta</strong>.<br /></span></p>
+</div>
+<p style="text-align: justify;"></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="11_conceptos_de_orientacin_a_objetos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="112_atributos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

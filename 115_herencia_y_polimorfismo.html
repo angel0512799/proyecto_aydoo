@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.1.5 Herencia y polimorfismo | Análisis y Diseño Orientado a Objetos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Angel Isaid Martinez Bautista" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-40"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Análisis y Diseño Orientado a Objetos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Análisis y Diseño Orientado a Objetos</a></li>
+   <li><a href="introduccin_a_la_asignatura.html" class="no-ch">Introducción a la asignatura</a></li>
+   <li class="current-page-parent"><a href="unidad_i_introduccin_a_la_orientacin_a_objetos.html" class="current-page-parent daddy">Unidad I: Introducción a la Orientación a Objetos</a>
+   <ul>
+      <li class="current-page-parent"><a href="11_conceptos_de_orientacin_a_objetos.html" class="current-page-parent daddy">1.1 Conceptos de Orientación a Objetos</a>
+      <ul>
+         <li><a href="111_clases_y_objetos.html" class="no-ch">1.1.1 Clases y objetos</a></li>
+         <li><a href="112_atributos.html" class="no-ch">1.1.2 Atributos</a></li>
+         <li><a href="113_operaciones_y_mensajes.html" class="no-ch">1.1.3 Operaciones y mensajes</a></li>
+         <li><a href="114_mensajes_y_encapsulamiento.html" class="no-ch">1.1.4 Mensajes y encapsulamiento</a></li>
+         <li id="active"><a href="115_herencia_y_polimorfismo.html" class="active no-ch">1.1.5 Herencia y polimorfismo</a></li>
+         <li><a href="actividad_interactiva.html" class="no-ch">Actividad interactiva</a></li>
+      </ul>
+      </li>
+      <li><a href="12_identificacin_de_los_elementos_de_un_modelo_de_objetos.html" class="daddy">1.2 Identificación de los elementos de un modelo de objetos</a>
+      <ul class="other-section">
+         <li><a href="121_identificacin_de_clases_y_objetos.html" class="no-ch">1.2.1 Identificación de clases y objetos</a></li>
+         <li><a href="122_especificaciones_de_atributos.html" class="no-ch">1.2.2 Especificaciones de atributos</a></li>
+         <li><a href="123_definicin_de_la_operaciones.html" class="no-ch">1.2.3 Definición de la operaciones</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="unidad_ii_lenguaje_unificado_para_modelar.html" class="daddy">Unidad II: Lenguaje Unificado para Modelar</a>
+   <ul class="other-section">
+      <li><a href="21_introduccin.html" class="daddy">2.1 Introducción</a>
+      <ul class="other-section">
+         <li><a href="unidad.html" class="no-ch">Unidad</a></li>
+         <li><a href="unidad0.html" class="no-ch">Unidad</a></li>
+         <li><a href="unidad1.html" class="no-ch">Unidad</a></li>
+      </ul>
+      </li>
+      <li><a href="22_presentacin_de_uml.html" class="no-ch">2.2 Presentación de UML</a></li>
+      <li><a href="23_modelado_del_comportamiento.html" class="no-ch">2.3 Modelado del Comportamiento</a></li>
+      <li><a href="24_modelado_estructural.html" class="no-ch">2.4 Modelado Estructural</a></li>
+      <li><a href="25_modelado_arquitectnico.html" class="no-ch">2.5 Modelado Arquitectónico</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_iii_rational_unified_process.html" class="no-ch">Unidad III: Rational Unified Process</a></li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="114_mensajes_y_encapsulamiento.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_interactiva.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.1.5 Herencia y polimorfismo</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_lee" id="id51">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Herencia</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta51_128_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><span style="color: #000000; font-size: 14pt;"><em>Recordando un poco lo antes visto, una clase es una categoría de objetos, por lo tanto un objeto es una instancia de una clase.</em><br style="clear: both;" /></span></p>
+<ul style="list-style-type: square;">
+<li style="text-align: justify;"><span style="color: #000000; font-size: 14pt;">Por ello, como instancia de una clase, <span style="color: #ff6600;"><strong><span style="color: #0000ff;">un objeto tiene todas las características de la clase de la que proviene</span><span style="color: #000000;">.</span></strong></span> A esto se le conoce como <span style="color: #0000ff;"><strong>herencia</strong></span>.</span></li>
+</ul>
+<p><img src="notas_herencia.png" alt="" width="757" height="685" style="display: block; margin-left: auto; margin-right: auto;" /></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Ver ejemplo" /></div><div class="feedback js-feedback js-hidden"><p style="text-align: center;"><em><strong><span style="color: #000000; font-size: 14pt;">Una <span style="color: #ff6600;">subclase X</span> puede heredar todos los atributos y operaciones asociadas con la <span style="color: #ff6600;">superclase Y</span>.</span></strong></em></p>
+<p><a href="herencia_ejemplo_1.png" rel="lightbox"><span style="color: #000000; font-size: 14pt;"><img src="herencia_ejemplo_1.1.png" width="700" height="458" style="display: block; margin-left: auto; margin-right: auto;" /></span></a></p>
+<p style="text-align: center;"><em><strong><span style="color: #000000; font-size: 14pt;">Es decir, que todas las <span style="color: #ff6600;">estructuras de datos y algoritmos</span> principalmente construidos e implementados para Y estarán disponibles para X.</span></strong></em></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_ejemplo" id="id118">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_ejemplo.svg)"><h1 class="iDeviceTitle">Ejemplo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta118_127_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs">
+<h2>Ejemplo 1</h2>
+<p><span style="color: #000000;"><strong><span style="font-size: 14pt;">Herencia de la clase Animal</span></strong></span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">La clase animal se divide en mamíferos, anfibios, insectos, aves, etcétera.</span></li>
+</ul>
+<p><span style="font-size: 14pt; color: #000000;"><img src="ejemplo_1_herencia.png" width="750" height="482" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<h2>Ejemplo 2</h2>
+<p><strong><span style="font-size: 14pt; color: #000000;">Herencia de la clase Electrodoméstico</span></strong></p>
+<ul>
+<li style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">La clase electrodoméstico se divide en lavadora, refrigerador, tostadora, microondas, y así sucesivamente.</span></li>
+</ul>
+<p><span style="font-size: 14pt; color: #000000;"><img src="ejemplo_2_herencia.png" width="750" height="518" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+</div>
+<p><span style="font-size: 14pt; color: #000000;"></span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_lee" id="id52">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Polimorfismo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta52_129_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><span style="font-size: 14pt; color: #000000;">Es la propiedad que le permite a una <em>operación o función</em> tener el <span style="color: #0000ff;"><strong><em>mismo nombre en clases diferentes y actuar de modo distinto en cada una de ellas</em></strong></span>.</span><span style="font-size: 14pt; color: #000000;"><br style="clear: both;" /></span></p>
+<p><span style="font-size: 14pt; color: #000000;"><img src="ejemplo_polimorfismo.png" width="501" height="383" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; color: #000000;"><em>Esta característica reduce enormemente el esfuerzo requerido para extender el diseño de un sistema orientado a objetos existente.</em></span></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="¿Por qué es tan importante?" /></div><div class="feedback js-feedback js-hidden"><p style="text-align: center;"><span style="color: #000000;"><strong><span style="font-size: 24pt;">Importancia</span></strong></span></p>
+<table border="0" style="height: 343px; width: 100%; border-style: none; background-color: #ffffff;">
+<tbody>
+<tr style="height: 333px;">
+<td style="width: 313px; height: 333px;"><img src="nota_polimorfismo_3.png" width="350" height="343" /></td>
+<td style="width: 313px; height: 333px;"><img src="nota_polimorfismo_2.png" width="350" height="342" /></td>
+<td style="width: 313px; height: 333px;"><img src="nota_polimorfismo_1.png" width="350" height="343" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+</tr>
+<tr style="height: 10px; text-align: center;">
+<td style="width: 313px; height: 10px;"><img src="importancia_polimorfismo_1.png" width="200" height="197" /></td>
+<td style="width: 313px; height: 10px;"><img src="importancia_polimorfismo_2.png" width="200" height="206" /></td>
+<td style="width: 313px; height: 10px;"><img src="importancia_polimorfismo_3.png" width="240" height="187" /></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><strong><em><span style="font-size: 14pt; color: #000000;">En la práctica, polimorfismo implica la capacidad de una operación de ser interpretada sólo por el propio objeto que lo invoca.</span></em></strong></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_ejemplo" id="id119">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_ejemplo.svg)"><h1 class="iDeviceTitle">Ejemplo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta119_128_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="font-size: 14pt; color: #000000;">La operación <span style="color: #ff6600;"><em><strong>abrir()</strong></em></span> se puede incluir en diferentes casos, como para:</span></p>
+<dl class="exe-dl">
+<dt><span style="color: #ff6600;">Una puerta</span></dt>
+<dd>
+<p><img src="poli_puerta.gif" width="200" height="234" /></p>
+</dd>
+<dt><span style="color: #ff6600;">Una ventana</span></dt>
+<dd>
+<p><img src="poli_ventana.gif" alt="" width="200" height="223" /></p>
+</dd>
+<dt><span style="color: #ff6600;">Un libro</span></dt>
+<dd>
+<p><img src="poli_libro.gif" alt="" width="200" height="160" /></p>
+</dd>
+<dt><span style="color: #ff6600;">Un regalo</span></dt>
+<dd>
+<p><img src="poli_regalo.gif" alt="" width="200" height="196" /></p>
+</dd>
+<dt><span style="color: #ff6600;">Una cuenta en un banco</span></dt>
+<dd>
+<p><img src="poli_cuenta.gif" alt="" width="200" height="274" /></p>
+</dd>
+<dt><span style="color: #ff6600;">Una cerradura</span></dt>
+<dd>
+<p><img src="poli_cerradura.gif" width="170" height="263" /></p>
+</dd>
+</dl>
+<p><strong><span style="font-size: 14pt; color: #000000;">En cada uno de estos casos, se realizará una acción diferente.</span></strong></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="114_mensajes_y_encapsulamiento.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_interactiva.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
